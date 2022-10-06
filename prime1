@@ -1,22 +1,27 @@
-#include <stdio.h> 
+#include <stdio.h>
 
-main() {
+int main ()
+{
   int number, i, c = 0;
-  printf("Enter number:");
-  scanf("%d", &number);
+  printf ("Enter number:");
+  scanf ("%d", &number);
 
   //logic
-  for (i = 1; i <= number; i++) {
-      if (number % i == 0) {
-         c++;
-      }
-  }
+  for (i = 1; i <= number; i++)
+    {
+      if (number % i == 0)
+	{
+	  c++;
+	}
+    }
 
-  if (c == 2) {
-        printf("number is a Prime number");
-  }
-  else {
-         printf("number is not a Prime number");
-  }
-  return 0;    
+  if (c == 2)
+    {
+      printf ("number is a Prime number");
+    }
+  else
+    {
+      printf ("number is not a Prime number");
+    }
+  return 0;
 }
